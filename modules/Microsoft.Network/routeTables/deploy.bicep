@@ -82,3 +82,6 @@ output resourceId string = routeTable.id
 
 @description('The location the resource was deployed into.')
 output location string = routeTable.location
+
+@description('The routes of the deployed route table.')
+output route array = routeTable.properties.routes

@@ -236,6 +236,7 @@ tags: {
 | `name` | string | The name of the route table. |
 | `resourceGroupName` | string | The resource group the route table was deployed into. |
 | `resourceId` | string | The resource ID of the route table. |
+| `route` | array | The routes of the deployed route table. |
 
 ## Cross-referenced modules
 
