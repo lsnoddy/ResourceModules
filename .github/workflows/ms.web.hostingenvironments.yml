@@ -30,6 +30,7 @@ on:
       - '.github/actions/templates/**'
       - '.github/workflows/template.module.yml'
       - '.github/workflows/ms.web.hostingenvironments.yml'
+      - 'modules/network/private-endpoint/**'
       - 'modules/web/hosting-environment/**'
       - 'utilities/pipelines/**'
       - '!utilities/pipelines/deploymentRemoval/**'
