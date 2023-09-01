@@ -4,8 +4,8 @@
   "metadata": {
     "_generator": {
       "name": "bicep",
-      "version": "0.20.4.51522",
-      "templateHash": "11788859333407565296"
+      "version": "0.14.85.62628",
+      "templateHash": "16632751486998351106"
     },
     "name": "Hosting Environment Custom DNS Suffix Configuration",
     "description": "This module deploys a Hosting Environment Custom DNS Suffix Configuration.",
@@ -73,24 +73,24 @@
   "outputs": {
     "name": {
       "type": "string",
+      "value": "customdnssuffix",
       "metadata": {
         "description": "The name of the configuration."
-      },
-      "value": "customdnssuffix"
+      }
     },
     "resourceId": {
       "type": "string",
+      "value": "[resourceId('Microsoft.Web/hostingEnvironments/configurations', parameters('hostingEnvironmentName'), 'customdnssuffix')]",
       "metadata": {
         "description": "The resource ID of the deployed configuration."
-      },
-      "value": "[resourceId('Microsoft.Web/hostingEnvironments/configurations', parameters('hostingEnvironmentName'), 'customdnssuffix')]"
+      }
     },
     "resourceGroupName": {
       "type": "string",
+      "value": "[resourceGroup().name]",
       "metadata": {
         "description": "The resource group of the deployed configuration."
-      },
-      "value": "[resourceGroup().name]"
+      }
     }
   }
 }
